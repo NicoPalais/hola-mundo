@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Hola, mundo! — Creada por Nico</title>
+    <meta
+      name="description"
+      content="El clásico ¡Hola, mundo! en la web. Una página creada por Nico y lista para GitHub Pages."
+    />
+    <meta property="og:title" content="¡Hola, mundo! — Creada por Nico" />
+    <meta
+      property="og:description"
+      content="El clásico ¡Hola, mundo! en la web. Creada por Nico."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("hola-mundo-theme");
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var theme = saved || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <a href="./" class="brand-path" aria-label="Inicio hola-mundo">
+          <span class="prompt-symbol" aria-hidden="true">~</span>/hola-mundo
+        </a>
+
+        <div class="topbar-actions">
+          <a
+            href="https://github.com/NicoPalais/hola-mundo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="topbar-link"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+              />
+            </svg>
+            <span>GitHub</span>
+          </a>
+
+          <button
+            type="button"
+            id="theme-toggle"
+            class="icon-btn"
+            aria-label="Cambiar entre modo claro y oscuro"
+            title="Cambiar tema"
+          >
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="hero">
+        <div class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>El clásico primer programa</span>
+        </div>
+
+        <h1 class="hero-title" id="greeting-title">¡Hola, mundo!</h1>
+
+        <p class="hero-subtitle">
+          Toda gran aventura en el código comienza con un saludo en pantalla.
+        </p>
+
+        <div class="author-chip" aria-label="Autoría de la página">
+          <span class="author-avatar" aria-hidden="true">N</span>
+          <span class="author-text">
+            Creada por <strong class="author-name">Nico</strong>
+          </span>
+        </div>
+
+        <section class="terminal-card" aria-label="Ejemplo de código Hola Mundo">
+          <div class="terminal-header">
+            <div class="window-dots" aria-hidden="true">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-amber"></span>
+              <span class="dot dot-green"></span>
+            </div>
+
+            <div class="lang-tabs" role="tablist" aria-label="Lenguajes de programación">
+              <button
+                type="button"
+                role="tab"
+                class="lang-tab is-active"
+                aria-selected="true"
+                data-lang="html"
+              >
+                index.html
+              </button>
+              <button
+                type="button"
+                role="tab"
+                class="lang-tab"
+                aria-selected="false"
+                data-lang="js"
+              >
+                hola.js
+              </button>
+              <button
+                type="button"
+                role="tab"
+                class="lang-tab"
+                aria-selected="false"
+                data-lang="py"
+              >
+                hola.py
+              </button>
+              <button
+                type="button"
+                role="tab"
+                class="lang-tab"
+                aria-selected="false"
+                data-lang="c"
+              >
+                hola.c
+              </button>
+            </div>
+
+            <button
+              type="button"
+              id="copy-btn"
+              class="copy-btn"
+              aria-label="Copiar código"
+            >
+              <span id="copy-label">Copiar</span>
+            </button>
+          </div>
+
+          <div class="terminal-body">
+            <pre class="code-block"><code id="code-content"><span class="tok-muted">&lt;!DOCTYPE html&gt;</span>
+<span class="tok-tag">&lt;html</span> <span class="tok-attr">lang</span>=<span class="tok-str">"es"</span><span class="tok-tag">&gt;</span>
+  <span class="tok-tag">&lt;body&gt;</span>
+    <span class="tok-tag">&lt;h1&gt;</span>¡Hola, mundo!<span class="tok-tag">&lt;/h1&gt;</span>
+    <span class="tok-tag">&lt;p&gt;</span>Creada por Nico<span class="tok-tag">&lt;/p&gt;</span>
+  <span class="tok-tag">&lt;/body&gt;</span>
+<span class="tok-tag">&lt;/html&gt;</span></code></pre>
+          </div>
+
+          <div class="terminal-footer">
+            <div class="console-output" aria-live="polite">
+              <span class="console-prompt" aria-hidden="true">$</span>
+              <span id="console-text">Pulsa ejecutar para ver el resultado</span>
+              <span class="console-cursor" aria-hidden="true"></span>
+            </div>
+
+            <div class="console-meta">
+              <span class="exit-pill" id="exit-pill">exit 0</span>
+              <button type="button" id="run-btn" class="run-btn">
+                <svg
+                  viewBox="0 0 16 16"
+                  width="11"
+                  height="11"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M4 2.5v11l9-5.5-9-5.5Z" />
+                </svg>
+                <span>Ejecutar</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Creada por
+          <a
+            href="https://github.com/NicoPalais"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-author"
+          >Nico</a>
+          <span class="footer-sep" aria-hidden="true">·</span>
+          Lista para <span>GitHub Pages</span>
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
